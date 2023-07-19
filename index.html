@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sujal - Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Caveat&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        background-color: rgb(28, 28, 75);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(20, 20, 101);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0px 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(177, 215, 247);
+        font-size: 1.02rem;
+      }
+
+      .pic img {
+        width: 70px;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 80px 40px;
+      }
+
+      .firstSection > div {
+        width: 35%;
+      }
+
+      .leftSection {
+        font-size: 2.6rem;
+        width: 30%;
+      }
+
+      .rightSection img {
+        width: 80%;
+      }
+
+      .purple {
+        color: rgb(63, 63, 231);
+      }
+
+      #element {
+        color: rgb(63, 63, 231);
+      }
+
+      .secondSection {
+        max-width: 80%;
+        margin: auto;
+        height: 16vw;
+      }
+      .secondSection h2 {
+        font-size: 1.6rem;
+        margin: 35px 0px;
+      }
+
+      .thirdSection {
+        max-width: 80%;
+        margin: auto;
+        height: 50vw;
+      }
+
+      .thirdSection div {
+        display: flex;
+      }
+
+      main hr {
+        border: 0;
+        height: 3px;
+        background: #282091;
+        margin: 30px 110px;
+      }
+      .line {
+        background: white;
+        height: 1px;
+        display: flex;
+        align-content: space-around;
+        justify-content: space-around;
+      }
+      .vartical-line {
+        background-color: white;
+        height: 88px;
+        width: 1px;
+      }
+
+      .vartical-line img {
+        width: 32px;
+        position: relative;
+        top: -32px;
+        left: -14px;
+      }
+
+      .vartical-line h4 {
+        color: slategrey;
+        position: relative;
+        top: 49px;
+        left: -14px;
+      }
+
+      .vartical-line h5{
+        position: relative;
+        top: 45px;
+        left: -12px;
+      }
+
+      @media (max-width: 768px) {
+        
+
+        nav {
+          display: grid;
+          justify-content: space-between;
+          height: 147px;
+          background-color: rgb(20, 20, 101);
+          align-content: center;
+          align-items: center;
+        }
+      }
+
+      .footer {
+        background-color: red;
+        height:40px;
+        display: flex;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="pic">
+            <img src="profile2.jpg" alt="profile"/>
+        </div>
+        <div class="left">Sujal Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        
+        <div class="leftSection">
+          Hi My Name Is <span class="purple">Sujal</span>
+          <div>
+            I am a passionate
+            <span id="element"></span>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="\bg1.webp" alt="" />
+        </div>
+      </section>
+      <hr />
+
+      <section class="secondSection">
+        <h2>Education Background</h2>
+        <div class="line">
+          <div class="vartical-line">
+            <img src="sc.png" alt="school">
+            <h4>10th class</h4>
+            <h5>2019</h5>
+          </div>
+          <div class="vartical-line">
+            <img src="sc.png" alt="school">
+            <h4>12th class</h4>
+            <h5>2021</h5>
+          </div>
+          <div class="vartical-line">
+            <img src="sc.png" alt="school">
+            <h4>JEE</h4>
+            <h5>2022</h5>
+          </div>
+          <div class="vartical-line">
+            <img src="sc.png" alt="school">
+            <h4>10th class</h4>
+            <h5>2019</h5>
+          </div>
+        </div>
+      </section>
+      <hr/>
+      <section class="thirdSection">
+        <h2>About</h2>
+        <div>
+          <p>My name is  </p>
+          <span id="name"></span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div>Sujal Portfolio</div>
+        <div>
+          <ul>
+            <li>HOME</li>
+            <li>HOME</li>
+            <li>HOME</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>HOME</li>
+            <li>HOME</li>
+            <li>HOME</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Graphic designer", "Guitarist", "Artist."],
+        typeSpeed: 50,
+      });
+      var typed = new Typed("#name", {
+        strings: ['Sujal '],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
